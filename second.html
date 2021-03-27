@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <style>
+  .container{text-align: center;}
+  .menu-bar{background: rgb(0,100,0); text-align: center;}
+  .menu-bar ul
+  {display: inline-flex;
+  list-style: none;
+  color: aliceblue;}
+  .menu-bar ul li{width: 150px;
+  margin: 15;
+  padding: 15px;}
+  .menu-bar ul li a{text-decoration: none;
+  color:#fff;}
+  .active, .menu-bar ul li:hover
+  {background:#2bab0d;
+  border-radius: 3px;
+ }
+ .menu-bar .fa{margin: 8px;}
+ .sub-menu-1{display:none;}
+ .menu-bar ul li:hover .sub-menu-1{display:block;
+ position:absolute;
+ background:rgb(0,100,0);
+ margin-top:15px;
+ margin-left:15px;}
+ .menu-bar ul li:hover .sub-menu-1 ul{display:block;
+ margin:10px;}
+ .menu-bar ul li:hover .sub-menu-1 ul li{width:150px;
+ padding:10px;
+ border-bottom: 1px dotted #fff;
+ background:transparent;
+ border-radius: 0;
+ text-align: left;
+ }
+ .menu-bar ul li:hover .sub-menu-1 ul li:last-child{border-bottom: none;}
+ .menu-bar ul li:hover .sub-menu-1 ul li a:hover{color:#b2ff00;;}
+   </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+ <div class="menu-bar">
+  <ul>
+    <li class="active"><a href="#"><i class="fa fa-home"></i>home</a></li>
+    <li><a href="#"><i class="fa fa-heart"></i>wishlist</a></li>
+    <li><a href="#"><i class="fa fa-shopping-cart"></i>cart</a></li>
+    <li><a href="#"><i class="fa fa-shopping-basket"></i>category</a>
+    <div class="sub-menu-1">
+      <ul>
+        <li><a href="#">lipsticks</a></li>
+        <li><a href="#">face products</a></li>
+        <li><a href="#">skin care products</a></li>
+      </ul>
+    </div></li>
+  </ul>
+</div>
+
+<div class="jumbotron text-center">
+  <h1>SUGAR</h1>
+  <p>try out the sugur products and explore your self to the world</p> 
+  <img src="C:\Users\AYESHAJALEEL\Pictures\Saved Pictures\sugar.jfif">
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3 class="bg-danger text-white">lipsticks</h3>
+      <img src="C:\Users\AYESHAJALEEL\Pictures\Saved Pictures\sugur lipstick.jfif" class="rounded">
+    </div>
+    <div class="col-sm-4">
+      <h3 class="bg-info text-whte">face products</h3>
+      <img src="C:\Users\AYESHAJALEEL\Pictures\Saved Pictures\pro.jfif">
+    </div>
+    <div class="col-sm-4">
+      <h3 class="bg-success text-white">skin care</h3>
+      <img src="C:\Users\AYESHAJALEEL\Pictures\Saved Pictures\skin care.jfif">       
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
